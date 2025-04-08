@@ -37,8 +37,8 @@ Before getting started, ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Isuruperera18/sit737-2025-prac4c.git
-cd sit737-2025-prac4c
+git clone https://github.com/Isuruperera18/sit737-2025-prac5p.git
+cd sit737-2025-prac5p
 ```
 
 ### 2. Install Dependencies
@@ -244,13 +244,7 @@ This section guides you through containerizing the application using Docker.
 #### 1. Install Docker  
 Ensure Docker Desktop is installed and running on your machine.
 
-#### 2. Clone the Repository
-
-```bash
-git clonehttps://github.com/Isuruperera18/sit737-2025-prac5p.git
-cd sit737-2025-prac4c
-```
-#### 3. Create a Dockerfile (Dockerfile)
+#### 2. Create a Dockerfile (Dockerfile)
 create a dockerfile in the project root folder with the name as `Dockerfile` without any file extension
 ```bash
 # Use the official Node.js LTS image as the base
@@ -275,7 +269,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-#### 4. Create a Docker Compose File (docker-compose.yml)
+#### 3. Create a Docker Compose File (docker-compose.yml)
 ```bash
 version: '3.8'
 
@@ -294,7 +288,7 @@ services:
       retries: 3
 ```
 
-#### 5. Install Docker Extension in VSCode
+#### 4. Install Docker Extension in VSCode
 To install the Docker extension in Visual Studio Code:
 
   1. Open **Visual Studio Code**.
@@ -303,7 +297,7 @@ To install the Docker extension in Visual Studio Code:
   4. Select the **Docker** extension by **Microsoft** from the search results.
   5. Click **Install** to install the extension.
 
-#### 6. Log in to Docker Hub from VSCode
+#### 5. Log in to Docker Hub from VSCode
 
 After installing the Docker extension, you need to log in to Docker Hub:
 
@@ -312,13 +306,13 @@ After installing the Docker extension, you need to log in to Docker Hub:
   3. A prompt will appear for you to enter your **Docker Hub username** and **password**.
   4. After successfully logging in, you should see your Docker Hub account in the Docker view of the sidebar.
 
-#### 7. Build the Docker Image
+#### 6. Build the Docker Image
 
 ```bash
 docker build -t sit737-2025-prac5p .
 ```
 
-#### 8. Start Docker Compose
+#### 7. Start Docker Compose
 ```bash
 docker-compose up
 ```
@@ -329,7 +323,7 @@ docker run -p 3000:3000 sit737-2025-prac5p
 
 Visit http://localhost:3000/api/health to test the API.
 
-#### 9. Push the Docker Image to a Registry (Optional)
+#### 8. Push the Docker Image to a Registry (Optional)
 If you want to push the image to Docker Hub:
 
 ```bash
