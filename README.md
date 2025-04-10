@@ -333,5 +333,7 @@ docker push yourdockerhubusername/sit737-2025-prac5p
 
 After pushing to the Docker Hub registry, you can check it at https://hub.docker.com/r/your_docker_hub_username/sit737-2025-prac5p
 
+My docker image in this URL you can check it at https://hub.docker.com/r/s223182277/sit737-2025-prac5p
+
 ## Part II – Container Health Check
 The `docker-compose.yml` file includes a health check that ensures the container is running properly. If the health check fails, Docker will attempt to restart the container automatically.
